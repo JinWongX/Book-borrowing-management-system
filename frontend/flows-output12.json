@@ -1,0 +1,101 @@
+{
+  "numTotalTestSuites": 2,
+  "numPassedTestSuites": 2,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 7,
+  "numPassedTests": 7,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "startTime": 1785910315499,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "Functional flows"
+          ],
+          "fullName": " Functional flows 流程 1：员工登录 → 图书检索 → 查看图书详情 → 提交借阅申请 → 查看我的借阅",
+          "status": "passed",
+          "title": "流程 1：员工登录 → 图书检索 → 查看图书详情 → 提交借阅申请 → 查看我的借阅",
+          "duration": 10597,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Functional flows"
+          ],
+          "fullName": " Functional flows 流程 2：图书管理员登录 → 借阅审核 → 通过申请 → 借出登记 → 归还登记",
+          "status": "passed",
+          "title": "流程 2：图书管理员登录 → 借阅审核 → 通过申请 → 借出登记 → 归还登记",
+          "duration": 16039,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Functional flows"
+          ],
+          "fullName": " Functional flows 流程 3：图书管理员登录 → 拒绝借阅申请（填写理由）",
+          "status": "passed",
+          "title": "流程 3：图书管理员登录 → 拒绝借阅申请（填写理由）",
+          "duration": 6363,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Functional flows"
+          ],
+          "fullName": " Functional flows 流程 4：员工登录 → 查看消息中心 → 标记消息已读",
+          "status": "passed",
+          "title": "流程 4：员工登录 → 查看消息中心 → 标记消息已读",
+          "duration": 2160,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Functional flows"
+          ],
+          "fullName": " Functional flows 流程 5：图书管理员登录 → 图书分类管理 → 新增/编辑/删除分类",
+          "status": "passed",
+          "title": "流程 5：图书管理员登录 → 图书分类管理 → 新增/编辑/删除分类",
+          "duration": 22620,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Functional flows"
+          ],
+          "fullName": " Functional flows 流程 6：图书管理员登录 → 图书管理 → 新增图书 → 编辑图书 → 删除图书",
+          "status": "passed",
+          "title": "流程 6：图书管理员登录 → 图书管理 → 新增图书 → 编辑图书 → 删除图书",
+          "duration": 23417,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Functional flows"
+          ],
+          "fullName": " Functional flows 流程 7：系统管理员登录 → 统计报表 → 导出 Excel",
+          "status": "passed",
+          "title": "流程 7：系统管理员登录 → 统计报表 → 导出 Excel",
+          "duration": 4586,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1785910342168,
+      "endTime": 1785910427951,
+      "status": "passed",
+      "message": "",
+      "name": "D:/workspace/Book borrowing management system/frontend/src/tests/functional-flows.test.jsx"
+    }
+  ]
+}

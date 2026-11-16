@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+
+# Databases
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Local test uploads (stay on disk, not in git)
+uploads/
+backend/uploads/
+
+# Frontend
+node_modules/
+frontend/dist/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage/
+coverage_html/
+.tox/
+.nox/
+*-output.txt
+*.log
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# IDE / OS / tools
+.idea/
+.vscode/
+.trae/
+.screenshots/
+*.swp
+*~
+.DS_Store
+Thumbs.db

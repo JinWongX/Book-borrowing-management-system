@@ -1,0 +1,104 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        component: [backend, frontend]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # ---------- Backend ----------
+      - name: Set up Python
+        if: matrix.component == 'backend'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install backend dependencies
+        if: matrix.component == 'backend'
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt pytest pytest-cov coverage
+
+      - name: Run backend tests and check coverage
+        if: matrix.component == 'backend'
+        run: |
+          pytest --cov=backend --cov-branch \
+                 --cov-config=backend/.coveragerc \
+                 --cov-report=term-missing \
+                 --cov-report=json:backend/coverage.json \
+                 backend/tests/
+
+          python - <<'PY'
+          import json, sys
+          with open('backend/coverage.json') as f:
+              data = json.load(f)
+          totals = data['totals']
+          stmt = totals['percent_statements_covered']
+          branch = totals['percent_branches_covered']
+          print(f"Backend statements coverage: {stmt:.2f}%")
+          print(f"Backend branches coverage:   {branch:.2f}%")
+          ok = stmt >= 95.0 and branch >= 90.0
+          print("Backend coverage thresholds: " + ("PASS" if ok else "FAIL"))
+          sys.exit(0 if ok else 1)
+          PY
+
+      # ---------- Frontend ----------
+      - name: Set up Node.js
+        if: matrix.component == 'frontend'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install frontend dependencies
+        if: matrix.component == 'frontend'
+        run: |
+          cd frontend
+          npm ci
+
+      - name: Run frontend tests and check coverage
+        if: matrix.component == 'frontend'
+        run: |
+          cd frontend
+          npm run test -- --coverage
+
+          node - <<'JS'
+          const data = require('./coverage/coverage-final.json');
+          const totals = { st: { t: 0, c: 0 }, br: { t: 0, c: 0 }, fn: { t: 0, c: 0 } };
+          for (const file of Object.values(data)) {
+            const sk = Object.keys(file.s);
+            totals.st.t += sk.length;
+            totals.st.c += sk.filter(k => file.s[k] > 0).length;
+            for (const arr of Object.values(file.b || {})) {
+              totals.br.t += arr.length;
+              totals.br.c += arr.filter(v => v > 0).length;
+            }
+            for (const v of Object.values(file.f || {})) {
+              totals.fn.t += 1;
+              if (v > 0) totals.fn.c += 1;
+            }
+          }
+          const pct = (c, t) => t ? (c / t * 100).toFixed(2) : '0.00';
+          const stmt = pct(totals.st.c, totals.st.t);
+          const branch = pct(totals.br.c, totals.br.t);
+          const func = pct(totals.fn.c, totals.fn.t);
+          console.log(`Frontend statements coverage: ${stmt}%`);
+          console.log(`Frontend branches coverage:   ${branch}%`);
+          console.log(`Frontend functions coverage:  ${func}%`);
+          const ok = stmt >= 95.0 && branch >= 90.0 && func >= 85.0;
+          console.log('Frontend coverage thresholds: ' + (ok ? 'PASS' : 'FAIL'));
+          process.exit(ok ? 0 : 1);
+          JS

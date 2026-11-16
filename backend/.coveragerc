@@ -1,0 +1,7 @@
+[run]
+source = backend
+omit = */tests/*, */test_*.py
+
+[report]
+omit = */tests/*, */test_*.py
+show_missing = true

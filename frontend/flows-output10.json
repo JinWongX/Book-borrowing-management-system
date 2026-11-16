@@ -1,0 +1,107 @@
+{
+  "numTotalTestSuites": 2,
+  "numPassedTestSuites": 2,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 7,
+  "numPassedTests": 6,
+  "numFailedTests": 1,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "startTime": 1785909924792,
+  "success": false,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "Functional flows"
+          ],
+          "fullName": " Functional flows 流程 1：员工登录 → 图书检索 → 查看图书详情 → 提交借阅申请 → 查看我的借阅",
+          "status": "passed",
+          "title": "流程 1：员工登录 → 图书检索 → 查看图书详情 → 提交借阅申请 → 查看我的借阅",
+          "duration": 8549,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Functional flows"
+          ],
+          "fullName": " Functional flows 流程 2：图书管理员登录 → 借阅审核 → 通过申请 → 借出登记 → 归还登记",
+          "status": "failed",
+          "title": "流程 2：图书管理员登录 → 借阅审核 → 通过申请 → 借出登记 → 归还登记",
+          "duration": 4808,
+          "failureMessages": [
+            "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBeInTheDocument()\u001b[22m\n\n\u001b[31mreceived\u001b[39m value must be an HTMLElement or an SVGElement.\n\n\nIgnored nodes: comments, script, style\n\u001b[36m<html>\u001b[39m\n  \u001b[36m<head />\u001b[39m\n  \u001b[36m<body>\u001b[39m\n    \u001b[36m<div>\u001b[39m\n      \u001b[36m<div\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\"ant-layout css-dev-only-do-not-override-mncuj7\"\u001b[39m\n        \u001b[33mstyle\u001b[39m=\u001b[32m\"min-height: 100vh;\"\u001b[39m\n      \u001b[36m>\u001b[39m\n        \u001b[36m<header\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\"ant-layout-header css-dev-only-do-not-override-mncuj7\"\u001b[39m\n          \u001b[33mstyle\u001b[39m=\u001b[32m\"display: flex; align-items: center; justify-content: space-between; padding: 0px 24px; background: rgb(0, 21, 41);\"\u001b[39m\n        \u001b[36m>\u001b[39m\n          \u001b[36m<div\u001b[39m\n            \u001b[33mstyle\u001b[39m=\u001b[32m\"color: rgb(255, 255, 255); font-size: 18px; font-weight: bold;\"\u001b[39m\n          \u001b[36m>\u001b[39m\n            \u001b[0m企业图书借阅管理系统\u001b[0m\n          \u001b[36m</div>\u001b[39m\n          \u001b[36m<div\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\"ant-space css-dev-only-do-not-override-mncuj7 ant-space-horizontal ant-space-align-center ant-space-gap-row-small ant-space-gap-col-small\"\u001b[39m\n          \u001b[36m>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"ant-space-item\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<span\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"ant-avatar ant-avatar-circle css-dev-only-do-not-override-mncuj7\"\u001b[39m\n                \u001b[33mstyle\u001b[39m=\u001b[32m\"background-color: rgb(24, 144, 255);\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[36m<span\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\"ant-avatar-string\"\u001b[39m\n                  \u001b[33mstyle\u001b[39m=\u001b[32m\"transform: scale(1);\"\u001b[39m\n                \u001b[36m>\u001b[39m\n                  \u001b[0mL\u001b[0m\n                \u001b[36m</span>\u001b[39m\n              \u001b[36m</span>\u001b[39m\n            \u001b[36m</div>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"ant-space-item\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<span\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"ant-typography css-dev-only-do-not-override-mncuj7\"\u001b[39m\n                \u001b[33mstyle\u001b[39m=\u001b[32m\"color: rgb(255, 255, 255);\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[0mlibrarian1\u001b[0m\n              \u001b[36m</span>\u001b[39m\n            \u001b[36m</div>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"ant-space-item\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<span\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"ant-typography css-dev-only-do-not-override-mncuj7\"\u001b[39m\n                \u001b[33mstyle\u001b[39m=\u001b[32m\"color: rgba(255, 255, 255, 0.65);\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[0m(\u001b[0m\n                \u001b[0m图书管理员\u001b[0m\n                \u001b[0m)\u001b[0m\n              \u001b[36m</span>\u001b[39m\n            \u001b[36m</div>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"ant-space-item\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<button\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"ant-btn css-dev-only-do-not-override-mncuj7 ant-btn-link ant-btn-color-link ant-btn-variant-link\"\u001b[39m\n                \u001b[33mstyle\u001b[39m=\u001b[32m\"color: rgb(255, 255, 255);\"\u001b[39m\n                \u001b[33mtype\u001b[39m=\u001b[32m\"button\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[36m<span>\u001b[39m\n                  \u001b[0m退出登录\u001b[0m\n                \u001b[36m</span>\u001b[39m\n              \u001b[36m</button>\u001b[39m\n            \u001b[36m</div>\u001b[39m\n          \u001b[36m</div>\u001b[39m\n        \u001b[36m</header>\u001b[39m\n        \u001b[36m<div\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\"ant-layout ant-layout-has-sider css-dev-only-do-not-override-mncuj7\"\u001b[39m\n        \u001b[36m>\u001b[39m\n          \u001b[36m<aside\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\"ant-layout-sider ant-layout-sider-light css-dev-only-do-not-override-mncuj7\"\u001b[39m\n            \u001b[33mstyle\u001b[39m=\u001b[32m\"flex: 0 0 200px; max-width: 200px; min-width: 200px; width: 200px;\"\u001b[39m\n          \u001b[36m>\u001b[39m\n            \u001b[36m<div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\"ant-layout-sider-children\"\u001b[39m\n            \u001b[36m>\u001b[39m\n              \u001b[36m<ul\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\"ant-menu ant-menu-root ant-menu-inline ant-menu-light css-dev-only-do-not-override-mncuj7\"\u001b[39m\n                \u001b[33mdata-menu-list\u001b[39m=\u001b[32m\"true\"\u001b[39m\n                \u001b[33mrole\u001b[39m=\u001b[32m\"menu\"\u001b[39m\n                \u001b[33mtabindex\u001b[39m=\u001b[32m\"0\"\u001b[39m\n              \u001b[36m>\u001b[39m\n                \u001b[36m<li\u001b[39m\n                  \u001b[33maria-describedby\u001b[39m=\u001b[32m\"test-id\"\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\"ant-menu-item ant-menu-item-only-child\"\u001b[39m\n                  \u001b[33mdata-menu-id\u001b[39m=\u001b[32m\"rc-menu-uuid-test-/\"\u001b[39m\n                  \u001b[33mrole\u001b[39m=\u001b[32m\"menuitem\"\u001b[39m\n                  \u001b[33mstyle\u001b[39m=\u001b[32m\"padding-left: 24px;\"\u001b[39m\n                  \u001b[33mtabindex\u001b[39m=\u001b[32m\"-1\"\u001b[39m\n                \u001b[36m>\u001b[39m\n                  \u001b[36m<span\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\"ant-menu-title-content\"\u001b[39m\n                  \u001b[36m>\u001b[39m\n                    \u001b[0m首页\u001b[0m\n                  \u001b[36m</span>\u001b[39m\n                \u001b[36m</li>\u001b[39m\n                \u001b[36m<li\u001b[39m\n                  \u001b[33maria-describedby\u001b[39m=\u001b[32m\"test-id\"\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\"ant-menu-item ant-menu-item-only-child\"\u001b[39m\n                  \u001b[33mdata-menu-id\u001b[39m=\u001b[32m\"rc-menu-uuid-test-/books\"\u001b[39m\n                  \u001b[33mrole\u001b[39m=\u001b[32m\"menuitem\"\u001b[39m\n                  \u001b[33mstyle\u001b[39m=\u001b[32m\"padding-left: 24px;\"\u001b[39m\n                  \u001b[33mtabindex\u001b[39m=\u001b[32m\"-1\"\u001b[39m\n                \u001b[36m>\u001b[39m\n                  \u001b[36m<span\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\"ant-menu-title-content\"\u001b[39m\n                  \u001b[36m>\u001b[39m\n                    \u001b[0m图书检索\u001b[0m\n                  \u001b[36m</span>\u001b[39m\n                \u001b[36m</li>\u001b[39m\n                \u001b[36m<li\u001b[39m\n                  \u001b[33maria-describedby\u001b[39m=\u001b[32m\"test-id\"\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\"ant-menu-item ant-menu-item-only-child\"\u001b[39m\n                  \u001b[33mdata-menu-id\u001b[39m=\u001b[32m\"rc-menu-uuid-test-/notifications\"\u001b[39m\n                  \u001b[33mrole\u001b[39m=\u001b[32m\"menuitem\"\u001b[39m\n                  \u001b[33mstyle\u001b[39m=\u001b[32m\"padding-left: 24px;\"\u001b[39m\n                  \u001b[33mtabindex\u001b[39m=\u001b[32m\"-1\"\u001b[39m\n                \u001b[36m>\u001b[39m\n                  \u001b[36m<span\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\"ant-menu-title-content\"\u001b[39m\n                  \u001b[36m>\u001b[39m\n                    \u001b[0m消息中心\u001b[0m\n                  \u001b[36m</span>\u001b[39m\n                \u001b[36m</li>\u001b[39m\n                \u001b[36m<li\u001b[39m\n                  \u001b[33maria-describedby\u001b[39m=\u001b[32m\"test-id\"\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\"ant-menu-item ant-menu-item-only-child\"\u001b[39m\n                  \u001b[33mdata-menu-id\u001b[39m=\u001b[32m\"rc-menu-uuid-test-/book-management\"\u001b[39m\n                  \u001b[33mrole\u001b[39m=\u001b[32m\"menuitem\"\u001b[39m\n                  \u001b[33mstyle\u001b[39m=\u001b[32m\"padding-left: 24px;\"\u001b[39m\n                  \u001b[33mtabindex\u001b[39m=\u001b[32m\"-1\"\u001b[39m\n                \u001b[36m>\u001b[39m\n                  \u001b[36m<span\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\"ant-menu-title-content\"\u001b[39m\n                  \u001b[36m>\u001b[39m\n                    \u001b[0m图书管理\u001b[0m\n                  \u001b[36m</span>\u001b[39m\n                \u001b[36m</li>\u001b[39m\n                \u001b[36m<li\u001b[39m\n                  \u001b[33maria-describedby\u001b[39m=\u001b[32m\"test-id\"\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m..."
+          ],
+          "location": {
+            "line": 500,
+            "column": 51
+          }
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Functional flows"
+          ],
+          "fullName": " Functional flows 流程 3：图书管理员登录 → 拒绝借阅申请（填写理由）",
+          "status": "passed",
+          "title": "流程 3：图书管理员登录 → 拒绝借阅申请（填写理由）",
+          "duration": 5545,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Functional flows"
+          ],
+          "fullName": " Functional flows 流程 4：员工登录 → 查看消息中心 → 标记消息已读",
+          "status": "passed",
+          "title": "流程 4：员工登录 → 查看消息中心 → 标记消息已读",
+          "duration": 2014,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Functional flows"
+          ],
+          "fullName": " Functional flows 流程 5：图书管理员登录 → 图书分类管理 → 新增/编辑/删除分类",
+          "status": "passed",
+          "title": "流程 5：图书管理员登录 → 图书分类管理 → 新增/编辑/删除分类",
+          "duration": 19516,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Functional flows"
+          ],
+          "fullName": " Functional flows 流程 6：图书管理员登录 → 图书管理 → 新增图书 → 编辑图书 → 删除图书",
+          "status": "passed",
+          "title": "流程 6：图书管理员登录 → 图书管理 → 新增图书 → 编辑图书 → 删除图书",
+          "duration": 21199,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Functional flows"
+          ],
+          "fullName": " Functional flows 流程 7：系统管理员登录 → 统计报表 → 导出 Excel",
+          "status": "passed",
+          "title": "流程 7：系统管理员登录 → 统计报表 → 导出 Excel",
+          "duration": 3331,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1785909945993,
+      "endTime": 1785910010955,
+      "status": "failed",
+      "message": "",
+      "name": "D:/workspace/Book borrowing management system/frontend/src/tests/functional-flows.test.jsx"
+    }
+  ]
+}
