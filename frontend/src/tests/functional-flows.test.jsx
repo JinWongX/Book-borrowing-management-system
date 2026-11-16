@@ -587,7 +587,7 @@ describe('Functional flows', () => {
       expect(screen.getByText('计算机技术')).toBeInTheDocument();
     });
 
-    fireEvent.click(screen.getByRole('button', { name: '新增分类' }));
+    fireEvent.click(screen.getByRole('button', { name: /新增分类/ }));
     await waitFor(() => {
       expect(screen.getByPlaceholderText('请输入分类名称')).toBeInTheDocument();
     });
@@ -602,7 +602,7 @@ describe('Functional flows', () => {
       expect(screen.getByText('新分类')).toBeInTheDocument();
     });
 
-    const editButtons = screen.getAllByText('编辑');
+    const editButtons = screen.getAllByRole('button', { name: '编辑' });
     const newCategoryEdit = editButtons[editButtons.length - 1];
     fireEvent.click(newCategoryEdit);
 
@@ -621,7 +621,7 @@ describe('Functional flows', () => {
       expect(screen.getByText('更新分类')).toBeInTheDocument();
     });
 
-    const deleteButtons = screen.getAllByText('删除');
+    const deleteButtons = screen.getAllByRole('button', { name: '删除' });
     const newCategoryDelete = deleteButtons[deleteButtons.length - 1];
     fireEvent.click(newCategoryDelete);
 
